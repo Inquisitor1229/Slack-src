@@ -1,0 +1,74 @@
+@import "components/normalize.scss";
+@import "components/workspace.scss";
+@import "components/navigator.scss";
+@import "components/sidebar.scss";
+@import "components/w-second.scss";
+
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/lato-regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/lato-black.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/lato-bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: bold;
+}
+
+::-webkit-scrollbar { 
+  width: 8px; 
+  height: 3px; 
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb { 
+  height: 2px; 
+  background-color: rgba(200, 200, 200, 0.6);
+  opacity: 0.9;
+  border-radius: 999px;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+h1 {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}

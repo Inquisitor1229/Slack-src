@@ -1,0 +1,299 @@
+.workspace {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  padding-top: 38px;
+
+  &__header {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 16px;
+    border-bottom: 1px solid rgba(28,28,29,.13);
+    flex-shrink: 0;
+
+    &-head {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &-head-ico {
+      width: 15px;
+      height: 15px;
+      margin-right: -3px;
+    }
+
+    &-head-txt {
+      color: #000;
+      font-size: 15px;
+      font-weight: 600;
+      padding-right: 3px;
+    }
+
+    &-head-btn {
+      width: 20px;
+      height: 20px;
+      background: none;
+      border: none;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-head-btn:hover {
+      background: rgba(29,28,29,.04);
+    }
+
+    &-head-btn-ico {
+      width: 15px;
+      height: 15px;
+    }
+
+    &-body {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &-body-element {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-left: 1px solid rgba(28,29,28, .2);
+      background: none;
+      padding: 0 8px;
+    }
+
+    &-body-element--members {
+      border: none;
+      padding-left: 0px;
+    }
+
+    &-body-element--members:hover {
+      filter: invert(.3);
+    }
+
+    &-body-element-img {
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      opacity: .8;
+    }
+
+    &-body-element-txt {
+      font-size: 13px;
+      color: #1D1C1DB3;
+    }
+
+    &-body-element--description {
+      border-radius: 3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+    }
+
+    &-body-element--description:hover {
+      border: 1px solid rgba(28,29,28, .2);
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    &-btn:hover {
+      background: rgba(28,29,28, .05);
+
+      .workspace__header-btn-ico, .workspace__header-btn-txt {
+        opacity: 1;
+      }
+    }
+
+    &-btn-ico {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      opacity: .7;
+    }
+
+    &-btn-txt {
+      color: #1d1c1d;
+      font-size: 13px;
+      font-weight: 400;
+      opacity: .7;
+    }  
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 10px;
+    overflow: auto;
+
+    &:hover ::-webkit-scrollbar, &:hover ::-webkit-scrollbar-thumb{
+      visibility: visible;
+    }
+
+    &-message {
+      display: flex;
+      padding: 8px 20px;
+    }
+
+    button {
+      border: none;
+      background: transparent;
+    }
+
+    &-message:hover {
+      background: rgba(0, 0, 0, .05);
+    }
+
+    &-message-avatar-btn {
+      display: flex;
+      margin-right: 8px;
+    }
+
+    &-message-avatar-img {
+      border-radius: 3px;
+    }
+
+    &-message-name {
+      font-size: 15px;
+      color: #1D1C1D;
+      font-weight: 900;
+      margin-right: 10px;
+      margin-bottom: -5px;
+    }
+
+    &-message-name:hover {
+      text-decoration: underline;
+    }
+
+    &-message-time {
+      font-size: 12px;
+      color: #616061;
+    }
+
+    &-message-time:hover {
+      text-decoration: underline;
+    }
+
+    &-message-text {
+      font-size: 15px;
+      color: #1D1C1D;
+    }
+
+    &-message-reply {
+      padding: 4px;
+      display: flex;
+    }
+
+    &-message-reply-img {
+      border-radius: 3px;
+    }
+
+    &-message-reply-img-btn {
+      padding-right: 3px;
+    }
+
+    &-message-reply-time {
+      color: blue;
+      opacity: .8;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }  
+
+  &__footer {
+    min-height: 64px;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 20px 22px 20px;
+      min-height: 42px;
+      border: 1px solid rgba(0, 0, 0, .5);
+      border-radius: 4px;
+    }
+
+    &-special-btn {
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: transparent;
+      margin: 0px 1px 0px 4px;
+      flex-grow: 1;
+    }
+
+    &-special-btn:hover {
+      background: #1264A3;
+
+      .workspace__footer-special-img {
+        filter: invert(100%);
+      }
+    }
+
+    &-special-img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &-message {
+      border: none;
+      border-left: 1px solid rgba(0, 0, 0, .2);
+      margin: 0;
+      padding-left: 7px;
+      font-size: 15px;
+      flex-grow: 99999;
+    }
+
+    &-message:focus {
+      outline: none;
+    }
+
+    &-style-btn {
+      width: 32px;
+      height: 32px;
+      opacity: .8;
+      flex-grow: 1;
+      margin: 0;
+      border: none;
+      background: none;
+      border-radius: 3px;
+    }
+
+    &-style-btn:hover {
+      background: rgba(116, 117, 116, 0.3);
+
+    }
+
+    &-style-btn:disabled {
+      background: none;
+      cursor: default;
+      opacity: .2;
+    }
+
+    &-style-img {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

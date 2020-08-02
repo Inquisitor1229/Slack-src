@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title Slack | random | Ais
+    meta(charset = 'utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    meta(name="viewport" content="width-device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    link(rel="stylesheet" href="css/style.min.css")
+    link(rel="icon" href="img/favicon.png" type="image/x-icon")
+  body
+    include components/navigator.pug
+    h1 Slack
+    .main
+      include components/sidebar.pug
+      include components/workspace.pug
+      include components/w-second.pug
